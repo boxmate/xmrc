@@ -117,3 +117,18 @@ class XiaomiRemote:
         + "\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00\x0a\xff\xff\xff\xff\x0b"\
         + "\x00\x00\x00\x00"
         self.sb.send(data)
+
+
+
+#实例化
+xmrc = XiaomiRemote('192.168.1.23')
+xmrc.connect()
+
+#home键
+xmrc.home()
+#左
+xmrc.left()
+#右
+xmrc.right()
+
+
